@@ -37,6 +37,8 @@ $$ cosx = 1 - \frac {x^2} {2!} +  \frac {x^4} {4!} - \frac {x^6} {6!} + ... $$
 
 ### 程式碼
 
+[三角函數.py](https://github.com/monesijd/Programming_and_Math/blob/main/%E4%B8%89%E8%A7%92%E5%87%BD%E6%95%B8.py)
+
 ```python
 import math
 def factorial(num):
@@ -121,6 +123,8 @@ $$ e = 1 + \frac {1} {1!} + \frac {1} {2!} + \frac {1} {3!} + ... $$
 
 
 ### 程式碼
+
+[e尤拉數.py](https://github.com/monesijd/Programming_and_Math/blob/main/e%E5%B0%A4%E6%8B%89%E6%95%B8.py)
 
 ```python
 def factorial(num):
