@@ -37,7 +37,7 @@ $$ cosx = 1 - \frac {x^2} {2!} +  \frac {x^4} {4!} - \frac {x^6} {6!} + ... $$
 
 ### 程式碼
 
-[三角函數.py](https://github.com/monesijd/Programming_and_Math/blob/main/%E4%B8%89%E8%A7%92%E5%87%BD%E6%95%B8.py)
+[三角函數.py](https://github.com/monesijd/Programming_and_Math/blob/main/desmos_picture.png)
 
 ```python
 import math
