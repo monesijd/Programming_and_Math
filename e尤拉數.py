@@ -1,11 +1,6 @@
-def factorial(num):
-    if num == 0 or num == 1:
-        return 1
-    else:
-        return factorial(num-1) * num
 my_factorial = [1]
-for _ in range(1, 151):
-    my_factorial.append(factorial(_))
+for num in range(1, 151):
+    my_factorial.append(num * my_factorial[num-1])
 # 建立階乘表
 
 def e():
