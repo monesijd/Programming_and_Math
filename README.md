@@ -41,14 +41,9 @@ $$ cosx = 1 - \frac {x^2} {2!} +  \frac {x^4} {4!} - \frac {x^6} {6!} + ... $$
 
 ```python
 import math
-def factorial(num):
-    if num == 0 or num == 1:
-        return 1
-    else:
-        return factorial(num-1) * num
 my_factorial = [1]
-for _ in range(1, 151):
-    my_factorial.append(factorial(_))
+for num in range(1, 151):
+    my_factorial.append(num * my_factorial[num-1])
 # 建立階乘表
 
 def sin(x):
@@ -127,14 +122,9 @@ $$ e = 1 + \frac {1} {1!} + \frac {1} {2!} + \frac {1} {3!} + ... $$
 [e尤拉數.py](https://github.com/monesijd/Programming_and_Math/blob/main/e%E5%B0%A4%E6%8B%89%E6%95%B8.py)
 
 ```python
-def factorial(num):
-    if num == 0 or num == 1:
-        return 1
-    else:
-        return factorial(num-1) * num
 my_factorial = [1]
-for _ in range(1, 151):
-    my_factorial.append(factorial(_))
+for num in range(1, 151):
+    my_factorial.append(num * my_factorial[num-1])
 # 建立階乘表
 
 def e():
