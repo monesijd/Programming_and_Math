@@ -1,12 +1,8 @@
 import math
-def factorial(num):
-    if num == 0 or num == 1:
-        return 1
-    else:
-        return factorial(num-1) * num
+    
 my_factorial = [1]
-for _ in range(1, 151):
-    my_factorial.append(factorial(_))
+for num in range(1, 151):
+    my_factorial.append(num * my_factorial[num-1])
 # 建立階乘表
 
 def sin(x):
@@ -17,7 +13,7 @@ def sin(x):
         else:
             answer -= (x**(_) / my_factorial[_])
     return answer
-# 將sin函數在x=0做泰勒展開式，算出近似值
+# 將 sin 函數在 x = 0 做泰勒展開式，算出近似值
 
 def cos(x):
     answer = 0
@@ -27,11 +23,10 @@ def cos(x):
         else:
             answer -= (x**(_) / my_factorial[_])
     return answer
-# 將cos函數在x=0做泰勒展開式，算出近似值
+# 將 cos 函數在 x = 0 做泰勒展開式，算出近似值
 
 pi = math.pi
-print("Please input x: ", end="")
-x = float(input())
+x = float(input("Please input x: "))
 if x > pi or x < -pi:
     x = x % (2*pi)
 
